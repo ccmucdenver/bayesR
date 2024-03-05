@@ -1734,6 +1734,7 @@ subroutine load_phenos()
     why_str=trim(why_str)
     if(why_str /=  'NA') then
        trains(i)=0
+       print *,'trying to read from string',why_str
        read(why_str,*) why(i)
     else
        trains(i)=1
